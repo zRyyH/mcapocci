@@ -56,7 +56,7 @@ export const texts = {
       }
     },
     footer: {
-      email: "agendamcapocci@gmail.com",
+      email: "contact@mcapocci.com",
       instagramAlt: "Instagram"
     },
     alert: {
@@ -124,7 +124,7 @@ export const texts = {
       }
     },
     footer: {
-      email: "agendamcapocci@gmail.com",
+      email: "contact@mcapocci.com",
       instagramAlt: "Instagram"
     },
 
@@ -191,7 +191,7 @@ export const texts = {
       }
     },
     footer: {
-      email: "agendamcapocci@gmail.com",
+      email: "contact@mcapocci.com",
       instagramAlt: "Instagram"
     },
     alert: {
