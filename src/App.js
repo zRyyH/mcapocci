@@ -140,6 +140,10 @@ return (
         <p className="text-center text-3xl my-4">{texts.form.title}</p>
         <p className="text-center text-sm md:text-lg">{texts.form.description}</p>
         <div className="h-8" />
+
+
+
+
         <form action="" id="contact-form" className="flex flex-col" onSubmit={handleSendForm}>
           <label htmlFor="" className="text-gray-600">{texts.form.nameLabel} <Start/></label>
           <input type="text" placeholder={texts.form.placeholders.name} name="name" className="border p-2 rounded" required />
@@ -173,6 +177,7 @@ return (
               type="file"
               className="border-none hidden"
               accept="image/*"
+              name="files"
               multiple
               required
               onError={() => alert(texts.alert.fileError)}
@@ -200,6 +205,13 @@ return (
           }
           {hasSendForm && <p className="text-sm text-center mt-1 text-gray-600">{texts.form.submitNote}</p>}
         </form>
+
+
+
+
+
+
+
       </div>
     </div>
 
