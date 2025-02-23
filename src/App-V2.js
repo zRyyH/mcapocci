@@ -221,33 +221,34 @@ function App() {
   const texts = texts2[currentPath().toLowerCase()];
 
   return (
-    <div className="w-full bg-neutral-900 text-white font-sans min-h-screen">
+    <div className="w-full bg-white text-black font-sans min-h-screen">
+      
       {/* Navbar / Header */}
-      <header className="flex items-center justify-between py-4 px-4 md:px-8 bg-neutral-900 border-b border-neutral-800">
+      <header className="flex items-center justify-between py-4 px-4 md:px-8 bg-white border-b border-gray-200">
         <div className="flex items-center gap-4">
-          {/* Logo pequena na Navbar */}
+          {/* Logo na Navbar */}
           <img 
             src={logo} 
             alt="Tattoo Studio Logo" 
             className="w-[50px] h-auto cursor-pointer"
             onClick={() => window.location.href = '/'}
           />
-          <div className="hidden md:flex items-center gap-8 text-gray-300 text-sm">
+          <div className="hidden md:flex items-center gap-8 text-gray-800 text-sm">
             <a 
               href="#about"
-              className="hover:text-gray-100 transition-colors"
+              className="hover:text-black transition-colors"
             >
               {texts.header.title}
             </a>
             <a
               href="#calendar"
-              className="hover:text-gray-100 transition-colors"
+              className="hover:text-black transition-colors"
             >
               {texts.calendar.title}
             </a>
             <a
               href="#contact"
-              className="hover:text-gray-100 transition-colors"
+              className="hover:text-black transition-colors"
             >
               {texts.form.title}
             </a>
@@ -256,22 +257,22 @@ function App() {
 
         {/* Idiomas e Instagram */}
         <div className="flex items-center gap-6">
-          <div className="flex gap-2 text-gray-400 text-xs md:text-sm">
+          <div className="flex gap-2 text-gray-600 text-xs md:text-sm">
             <a 
               href="/PT"
-              className={`cursor-pointer hover:text-gray-100 transition-colors ${currentPath() === "PT" && 'font-bold text-white'}`}
+              className={`cursor-pointer hover:text-black transition-colors ${currentPath() === "PT" && 'font-bold text-black'}`}
             >
               PT
             </a>
             <a 
               href="/ITA"
-              className={`cursor-pointer hover:text-gray-100 transition-colors ${currentPath() === "ITA" && 'font-bold text-white'}`}
+              className={`cursor-pointer hover:text-black transition-colors ${currentPath() === "ITA" && 'font-bold text-black'}`}
             >
               ITA
             </a>
             <a 
               href="/ENG"
-              className={`cursor-pointer hover:text-gray-100 transition-colors ${currentPath() === "ENG" && 'font-bold text-white'}`}
+              className={`cursor-pointer hover:text-black transition-colors ${currentPath() === "ENG" && 'font-bold text-black'}`}
             >
               ENG
             </a>
@@ -279,25 +280,28 @@ function App() {
           <FaInstagram 
             size={20} 
             onClick={redirectToInstagram} 
-            className="cursor-pointer text-gray-400 hover:text-white transition-colors"
+            className="cursor-pointer text-gray-600 hover:text-black transition-colors"
           />
         </div>
       </header>
       
       {/* Hero Section */}
       <section className="relative flex flex-col items-center justify-center pt-8 pb-12 px-4 bg-cover bg-center">
-        {/* Título grande */}
         <div className="max-w-2xl text-center space-y-4">
-          <img src={logo} alt={texts.header.instagramAlt} className="mx-auto w-[120px] md:w-[150px]" />
-          <h1 className="text-3xl md:text-5xl font-bold">
+          <img 
+            src={logo} 
+            alt={texts.header.instagramAlt} 
+            className="mx-auto w-[120px] md:w-[150px]" 
+          />
+          <h1 className="text-3xl md:text-5xl font-bold text-gray-800">
             {texts.header.title}
           </h1>
-          <p className="text-sm md:text-lg text-gray-300">
+          <p className="text-sm md:text-lg text-gray-600">
             {texts.header.subtitle}
           </p>
         </div>
 
-        {/* Vídeo embed - estilo "responsive" */}
+        {/* Vídeo embed */}
         <div className="w-full max-w-[800px] mt-6 md:mt-10">
           <div className="relative w-full h-0 pb-[56.25%]"> 
             <iframe
@@ -310,7 +314,7 @@ function App() {
           </div>
         </div>
 
-        {/* Botão de CTA para formulário no hero */}
+        {/* Botão de CTA para formulário */}
         <div className="mt-8">
           <button
             className="bg-red-600 hover:bg-red-700 transition-colors text-white py-2 px-6 rounded-full font-semibold"
@@ -321,23 +325,23 @@ function App() {
         </div>
       </section>
 
-      {/* Calendário (foco em conversão) */}
-      <section id="calendar" className="py-12 px-4 border-t border-neutral-800">
-        <h2 className="text-center text-2xl md:text-4xl font-bold mb-8">{texts.calendar.title}</h2>
+      {/* Calendário */}
+      <section id="calendar" className="py-12 px-4 border-t border-gray-200 bg-white">
+        <h2 className="text-center text-2xl md:text-4xl font-bold mb-8 text-gray-800">{texts.calendar.title}</h2>
         
         <div className="max-w-2xl mx-auto space-y-6">
-          <div className="border border-neutral-700 rounded-xl flex items-center gap-4 py-4 px-6 transition hover:bg-neutral-800">
+          <div className="border border-gray-300 rounded-xl flex items-center gap-4 py-4 px-6 transition hover:bg-gray-100">
             <FaPlane size={35} className="text-red-600" />
             <div>
-              <h3 className="text-xl font-semibold">{texts.calendar.firenze.title}</h3>
+              <h3 className="text-xl font-semibold text-gray-800">{texts.calendar.firenze.title}</h3>
               <p className="text-red-400 font-medium">{texts.calendar.firenze.status}</p>
             </div>
           </div>
 
-          <div className="border border-neutral-700 rounded-xl flex items-center gap-4 py-4 px-6 transition hover:bg-neutral-800">
+          <div className="border border-gray-300 rounded-xl flex items-center gap-4 py-4 px-6 transition hover:bg-gray-100">
             <IoMdHome size={35} className="text-red-600" />
             <div>
-              <h3 className="text-xl font-semibold">{texts.calendar.saoPaulo.title}</h3>
+              <h3 className="text-xl font-semibold text-gray-800">{texts.calendar.saoPaulo.title}</h3>
               <p className="text-red-400 font-medium">{texts.calendar.saoPaulo.status}</p>
             </div>
           </div>
@@ -353,47 +357,36 @@ function App() {
         </div>
       </section>
 
-      {/* Seção Sobre */}
-      <section id="about" className="py-12 px-4 border-t border-neutral-800">
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-start gap-8">
+      {/* Seção Sobre (imagem e descrição sempre lado a lado) */}
+      <section id="about" className="py-12 px-4 border-t border-gray-200 bg-white">
+        <div className="max-w-5xl mx-auto flex flex-row flex-wrap items-start gap-4">
+          {/* Imagem à esquerda */}
+          <img
+            src={marcelo}
+            alt="Marcelo Capocci"
+            className="w-[150px] sm:w-[200px] h-auto object-cover rounded-md"
+          />
+          {/* Texto à direita */}
           <div className="flex-1 space-y-4">
-            <h2 className="text-2xl md:text-4xl font-bold">{texts.about.title}</h2>
-            <p className="text-gray-300 text-sm md:text-lg whitespace-pre-line">
-              {texts.about.description}
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
+              {texts.about.marcelo.name}
+            </h2>
+            <p className="text-gray-700 text-sm md:text-lg whitespace-pre-line">
+              {texts.about.marcelo.bio}
             </p>
-          </div>
-          <div className="flex-1 flex flex-col md:flex-row gap-8 items-start">
-            <div className="md:w-1/2 w-full">
-              <img
-                src={marcelo}
-                alt="Marcelo Capocci"
-                className="w-full h-auto object-cover rounded-tr-[40px] rounded-bl-[40px] border border-neutral-700"
-              />
-            </div>
-            <div className="md:w-1/2 w-full space-y-4">
-              <h3 className="text-xl md:text-2xl font-semibold text-red-600">
-                {texts.about.marcelo.name}
-              </h3>
-              <p className="text-gray-300 text-sm md:text-lg whitespace-pre-line">
-                {texts.about.marcelo.bio}
-              </p>
-            </div>
           </div>
         </div>
       </section>
 
       {/* Seção Formulário / Tattoo imagem */}
-      <section 
-        id="contact" 
-        className="py-12 px-4 border-t border-neutral-800"
-      >
+      <section id="contact" className="py-12 px-4 border-t border-gray-200 bg-white">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-8">
-          {/* Imagem destacada */}
+          {/* Imagem destacada (sem borda) */}
           <div className="md:w-1/2 w-full flex justify-center">
             <img
               src={tatto}
               alt="Tattoo"
-              className="w-full md:w-auto h-auto object-contain border border-neutral-700 rounded-md"
+              className="w-full md:w-auto h-auto object-contain rounded-md"
             />
           </div>
           
@@ -401,8 +394,8 @@ function App() {
           <div className="md:w-1/2 w-full">
             <div className="text-center space-y-2">
               <p className="text-xl font-light text-red-600">{texts.form.year}</p>
-              <h2 className="text-3xl md:text-4xl font-bold">{texts.form.title}</h2>
-              <p className="text-gray-300 text-sm md:text-lg px-2">{texts.form.description}</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-800">{texts.form.title}</h2>
+              <p className="text-gray-600 text-sm md:text-lg px-2">{texts.form.description}</p>
             </div>
 
             <form 
@@ -410,51 +403,51 @@ function App() {
               onSubmit={handleSendForm}
             >
               <div>
-                <label className="block text-gray-200 font-medium mb-1">
-                  {texts.form.nameLabel} <Start/>
+                <label className="block text-gray-700 font-medium mb-1">
+                  {texts.form.nameLabel} <Star/>
                 </label>
                 <input 
                   type="text"
                   name="name"
                   required
                   placeholder={texts.form.placeholders.name}
-                  className="w-full border border-neutral-700 bg-neutral-800 p-3 rounded-md outline-none text-gray-100 placeholder-gray-500"
+                  className="w-full border border-gray-300 bg-white p-3 rounded-md outline-none text-gray-800 placeholder-gray-500"
                 />
               </div>
 
               <div>
-                <label className="block text-gray-200 font-medium mb-1">
-                  {texts.form.emailLabel} <Start/>
+                <label className="block text-gray-700 font-medium mb-1">
+                  {texts.form.emailLabel} <Star/>
                 </label>
                 <input 
                   type="email"
                   name="email"
                   required
                   placeholder={texts.form.placeholders.email}
-                  className="w-full border border-neutral-700 bg-neutral-800 p-3 rounded-md outline-none text-gray-100 placeholder-gray-500"
+                  className="w-full border border-gray-300 bg-white p-3 rounded-md outline-none text-gray-800 placeholder-gray-500"
                 />
               </div>
 
               <div>
-                <label className="block text-gray-200 font-medium mb-1">
-                  {texts.form.messageLabel} <Start/>
+                <label className="block text-gray-700 font-medium mb-1">
+                  {texts.form.messageLabel} <Star/>
                 </label>
                 <textarea 
                   name="message"
                   rows="4"
                   required
                   placeholder={texts.form.placeholders.message}
-                  className="w-full border border-neutral-700 bg-neutral-800 p-3 rounded-md outline-none text-gray-100 placeholder-gray-500"
+                  className="w-full border border-gray-300 bg-white p-3 rounded-md outline-none text-gray-800 placeholder-gray-500"
                 ></textarea>
               </div>
 
               <div>
-                <label className="block text-gray-200 font-medium mb-1">
-                  {texts.form.locationLabel} <Start/>
+                <label className="block text-gray-700 font-medium mb-1">
+                  {texts.form.locationLabel} <Star/>
                 </label>
                 <select
                   name="country"
-                  className="w-full border border-neutral-700 bg-neutral-800 p-3 rounded-md text-gray-100"
+                  className="w-full border border-gray-300 bg-white p-3 rounded-md text-gray-800"
                 >
                   <option value="SP">{texts.form.locations.sp}</option>
                   <option value="ITALIA">{texts.form.locations.italy}</option>
@@ -463,16 +456,16 @@ function App() {
 
               {/* Upload de arquivos */}
               <div>
-                <label className="block text-gray-200 font-medium mb-1">
-                  {texts.form.attachmentLabel} <Start/>
+                <label className="block text-gray-700 font-medium mb-1">
+                  {texts.form.attachmentLabel} <Star/>
                 </label>
-                <p className="text-sm text-gray-400 mb-2">
+                <p className="text-sm text-gray-600 mb-2">
                   <span className="text-red-400">{texts.form.attachmentDescription1}</span>
                   {texts.form.attachmentDescription2}
                 </p>
                 <label
                   htmlFor="file-upload"
-                  className="inline-flex items-center gap-2 py-2 px-4 border border-neutral-700 rounded-md cursor-pointer text-sm text-gray-300 hover:bg-neutral-800 transition-colors"
+                  className="inline-flex items-center gap-2 py-2 px-4 border border-gray-300 rounded-md cursor-pointer text-sm text-gray-700 hover:bg-gray-100 transition-colors"
                 >
                   <FaPaperclip size={16} />
                   <span>{texts.form.attachButton}</span>
@@ -483,7 +476,6 @@ function App() {
                   className="hidden"
                   accept="image/*"
                   multiple
-                  onError={() => alert(texts.alert.fileError)}
                   onChange={(e) => {
                     const newFiles = Array.from(e.target.files);
                     if (filesList.length + newFiles.length > 4) {
@@ -496,13 +488,13 @@ function App() {
                 />
                 
                 {/* Lista de arquivos */}
-                <ul className="mt-4 space-y-2 text-sm text-gray-200">
+                <ul className="mt-4 space-y-2 text-sm text-gray-700">
                   {filesList.map((file, index) => (
                     <li key={index} className="flex items-center gap-2">
                       <img
                         src={URL.createObjectURL(file)}
                         alt={file.name}
-                        className="w-16 h-16 object-cover border border-neutral-700"
+                        className="w-16 h-16 object-cover rounded-md"
                       />
                       <span>{file.name}</span>
                       <button
@@ -523,7 +515,7 @@ function App() {
                   <button
                     type="submit"
                     disabled
-                    className="w-full bg-neutral-600 cursor-not-allowed text-gray-400 py-3 px-4 rounded-md font-semibold"
+                    className="w-full bg-gray-300 cursor-not-allowed text-gray-600 py-3 px-4 rounded-md font-semibold"
                   >
                     {texts.form.submitSuccess}
                   </button>
@@ -541,7 +533,7 @@ function App() {
                   </button>
                 )}
                 {hasSendForm && (
-                  <p className="text-sm text-center mt-2 text-gray-400">
+                  <p className="text-sm text-center mt-2 text-gray-500">
                     {texts.form.submitNote}
                   </p>
                 )}
@@ -552,18 +544,18 @@ function App() {
       </section>
 
       {/* Footer */}
-      <footer className="pt-12 pb-6 px-4 md:px-8 bg-neutral-900 border-t border-neutral-800 text-center">
+      <footer className="pt-12 pb-6 px-4 md:px-8 bg-white border-t border-gray-200 text-center">
         <div className="flex flex-col items-center gap-4">
           <img
             src={logo}
             alt={texts.footer.instagramAlt}
             className="w-20 h-auto mx-auto"
           />
-          <p className="text-lg font-semibold">{texts.header.title}</p>
-          <p className="text-gray-400">{texts.footer.email}</p>
+          <p className="text-lg font-semibold text-gray-800">{texts.header.title}</p>
+          <p className="text-gray-500">{texts.footer.email}</p>
           <FaInstagram
             size={25}
-            className="text-gray-400 hover:text-white transition-colors cursor-pointer"
+            className="text-gray-600 hover:text-black transition-colors cursor-pointer"
             onClick={redirectToInstagram}
           />
         </div>
@@ -579,11 +571,8 @@ function App() {
   );
 }
 
-// Componente auxiliar para mostrar asterisco
-function Start(){
-  return (
-    <span className="text-red-400">*</span>
-  );
+function Star(){
+  return <span className="text-red-400">*</span>;
 }
 
 export default App;
