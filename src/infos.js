@@ -43,7 +43,7 @@ export const texts = {
       },
       attachmentLabel: "ANEXAR REFERÊNCIA",
       attachmentDescription1: "Adicione obrigatoriamente uma foto frontal da região que pensa tatuar. ",
-      attachmentDescription2: "E caso possua, envie 2 arquivos de referência que ajudem a contar sua ideia.",
+      attachmentDescription2: "E caso possua, envie 3 arquivos de referência que ajudem a contar sua ideia.",
       attachmentNote: "Até 4 arquivos. Máx: 10mb",
       attachButton: "ANEXAR ARQUIVOS",
       submitButton: "Enviar",
@@ -111,7 +111,7 @@ export const texts = {
       },
       attachmentLabel: "ATTACH REFERENCE",
       attachmentDescription1: "You must add a frontal photo of the area you are considering tattooing. ",
-      attachmentDescription2: "And if you have one, send 2 reference files that help tell your idea.",
+      attachmentDescription2: "And if you have one, send 3 reference files that help tell your idea.",
       attachmentNote: "Up to 4 files. Max: 10MB",
       attachButton: "ATTACH FILES",
       submitButton: "Send",
@@ -178,7 +178,7 @@ export const texts = {
       },
       attachmentLabel: "ALLEGARE RIFERIMENTO",
       attachmentDescription1: "Devi aggiungere una foto frontale dell'area che intendi tatuare. ",
-      attachmentDescription2: "E se ne hai uno, invia 2 file di riferimento che ti aiutino a raccontare la tua idea.",
+      attachmentDescription2: "E se ne hai uno, invia 3 file di riferimento che ti aiutino a raccontare la tua idea.",
       attachmentNote: "Fino a 4 file. Max: 10MB",
       attachButton: "ALLEGA FILE",
       submitButton: "Inviare",
@@ -201,69 +201,3 @@ export const texts = {
     }
   }
 };
-
-
-
-/*
-ITALIANO
-Guarda il video qui sotto per conoscere il mio metodo di lavoro:
-CALENDARIO 2025
-Parla con me
-Tatuaggi personalizzati che raccontano storie.
-Il mio processo è unico e attento.
-La creazione artistica viene eseguita con attenzione ai dettagli, rispettando la tua idea iniziale e ascoltando la tua opinione sul progetto presentato.Le mie arti sono il risultato di una storia, di un concetto o di riferimenti visivi.
-Marcelo Capocci
-Appassionato di arte fin da piccolo. Brasiliano, nato nel 1984 a San Paolo.Laureato in Digital Design nel 2006 presso Anhembi Morumbi.Ho lavorato nelle più grandi agenzie pubblicitarie del Paese e mi dedico all'arte del tatuaggio da 13 anni.
-2025
-APPUNTAMENTI
-Compila il modulo sottostante e ti contatterò il prima possibile.
-IL TUO NOME COMPLETO *
-NOME
-LA TUA E-MAIL *
-E-MAIL
-IL TUO MESSAGGIO *
-MESSAGGIO
-SELEZIONA IL PAESE
-ALLEGARE RIFERIMENTO *
-Devi aggiungere una foto frontale dell'area che intendi tatuare. E se ne hai uno, invia 2 file di riferimento che ti aiutino a raccontare la tua idea.
-Fino a 4 file. Massimo: 10mb
-ALLEGA FILE
-Inviare
-
-
-
-
-
-
-
-
-
-ngles:
-Watch the video below to learn about my working method:
-CALENDAR 2025
-Talk to me
-Custom tattoos that tell stories.
-
-My process is unique and careful.
-Art creation is done with attention to detail, respecting your initial idea and listening to your opinion on the design presented.
-My arts are the result of a story, concept or visual references.
-Marcelo Capocci
-Passionate about arts since he was little. Brazilian, born in 1984 in São Paulo.
-Graduated in Digital Design in 2006 from Anhembi Morumbi.
-I worked in the biggest advertising agencies in the country, and I have dedicated myself to the art of tattooing for 13 years.
-2025
-APPOINTMENTS
-Please fill out the form below and I will contact you as soon as possible.
-YOUR FULL NAME *
-NAME
-YOUR EMAIL *
-EMAIL
-YOUR MESSAGE *
-MESSAGE
-SELECT THE COUNTRY
-ATTACH REFERENCE *
-You must add a frontal photo of the area you are considering tattooing. And if you have one, send 2 reference files that help tell your idea.
-Up to 4 files. Max: 10mb
-ATTACH FILES
-send
-*/
