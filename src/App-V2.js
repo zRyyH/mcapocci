@@ -288,11 +288,11 @@ function App() {
       {/* Hero Section */}
       <section className="relative flex flex-col items-center justify-center pt-8 pb-12 px-4 bg-cover bg-center">
         <div className="max-w-2xl text-center space-y-4">
-          <img 
+          {/* <img 
             src={logo} 
             alt={texts.header.instagramAlt} 
             className="mx-auto w-[120px] md:w-[150px]" 
-          />
+          /> */}
           <h1 className="text-3xl md:text-5xl font-bold text-gray-800">
             {texts.header.title}
           </h1>
