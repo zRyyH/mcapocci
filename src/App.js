@@ -210,6 +210,14 @@ function App() {
         </div>
         <div className="h-4" />
         <div className="border-2 rounded-full flex gap-4 items-center py-2 px-4 text-gray-500 max-w-[350px] mx-auto">
+          <FaPlane size={35} />
+          <div>
+            <h1 className="text-xl">{texts.calendar.milano.title}</h1>
+            <p className="text-red-700 font-semibold">{texts.calendar.milano.status}</p>
+          </div>
+        </div>
+        <div className="h-4" />
+        <div className="border-2 rounded-full flex gap-4 items-center py-2 px-4 text-gray-500 max-w-[350px] mx-auto">
           <IoMdHome size={35} />
           <div>
             <h1 className="text-xl">{texts.calendar.saoPaulo.title}</h1>

@@ -11,6 +11,10 @@ export const texts = {
         title: "FIRENZE 03 - 30 APRILE",
         status: "NOW BOOKING"
       },
+      milano: {
+        title: "MILANO 22 - 26 APRILE",
+        status: "NOW BOOKING"
+      },
       saoPaulo: {
         title: "SP - SÃO PAULO",
         status: "AGENDA ABERTA"
@@ -76,6 +80,10 @@ export const texts = {
       title: "CALENDAR 2025",
       firenze: {
         title: "FLORENCE 03 - 30 APRIL",
+        status: "NOW BOOKING"
+      },
+      milano: {
+        title: "MILANO 22 - 26 APRILE",
         status: "NOW BOOKING"
       },
       saoPaulo: {
@@ -145,6 +153,10 @@ export const texts = {
       firenze: {
         title: "FIRENZE 03 - 30 APRILE",
         status: "PRENOTAZIONI APERTE"
+      },
+      milano: {
+        title: "MILANO 22 - 26 APRILE",
+        status: "NOW BOOKING"
       },
       saoPaulo: {
         title: "SP - SÃO PAULO",
